@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'FlowFont';
+    src: url('public/fonts/Aeonik-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FlowFont';
+    src: url('public/fonts/Aeonik-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FlowFont';
+    src: url('public/fonts/Aeonik-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FlowFont';
+    src: url('public/fonts/Aeonik-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --main-font: 'FlowFont', sans-serif;
+    --main-bg: #090A0D;
+    --main-text: #F2E5D5;
+    --blue-skyblue: #4BC2F3;
+    --blue-skyblue-soft: #9ACDD9;
+    --dark-blue: #0A0E3C;
+    --sand: #F2E5D5;
+    --main-degrade: linear-gradient(90deg, var(--sand) 0%, var(--blue-skyblue-soft) 40%, var(--blue-skyblue) 80%);
+}
+
+html {
+    font-family: var(--main-font);
+    background-color: var(--main-bg);
+    color: var(--main-text);
+
+}
+
+
+/* Custom themes */
+.bg-flow-text {
+    -webkit-text-fill-color: transparent;
+}
