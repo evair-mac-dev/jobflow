@@ -1,8 +1,18 @@
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import { Dashboard, Setting } from '@pages';
+import { NavigationTemplate } from '@templates';
+
 function App() {
   return (
-    <>
-      <div className="bg-flow-text bg-clip-text text-4xl w-fit">JobFlow</div>
-    </>
+    <HashRouter>
+      <Routes>
+        <Route element={<NavigationTemplate />}>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/settings" element={<Setting />} />
+        </Route>
+      </Routes>
+    </HashRouter>
   );
 }
 

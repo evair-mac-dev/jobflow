@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'FlowFont';
-    src: url('public/fonts/Aeonik-Bold.otf') format('opentype');
+    src: url('/fonts/Aeonik-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FlowFont';
-    src: url('public/fonts/Aeonik-Medium.otf') format('opentype');
+    src: url('/fonts/Aeonik-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FlowFont';
-    src: url('public/fonts/Aeonik-Regular.otf') format('opentype');
+    src: url('/fonts/Aeonik-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FlowFont';
-    src: url('public/fonts/Aeonik-Light.otf') format('opentype');
+    src: url('/fonts/Aeonik-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 }
@@ -35,18 +35,26 @@
     --main-font: 'FlowFont', sans-serif;
     --main-bg: #090A0D;
     --main-text: #F2E5D5;
+    --main-text-soft: rgba(242, 229, 213, 0.2);
     --blue-skyblue: #4BC2F3;
-    --blue-skyblue-soft: #9ACDD9;
+    --blue-skyblue-soft: rgba(75, 194, 243, 0.2);
+    --blue-skyblue-alt: #9ACDD9;
     --dark-blue: #0A0E3C;
+    --dark-blue-soft: rgba(10, 14, 60, 0.25);
+    --dark-blue-soft-alt: rgba(10, 14, 60, 0.08);
     --sand: #F2E5D5;
-    --main-degrade: linear-gradient(90deg, var(--sand) 0%, var(--blue-skyblue-soft) 40%, var(--blue-skyblue) 80%);
+    --sand-soft: rgba(242, 229, 213, 0.5);
+    --sand-soft-alt: rgba(242, 229, 213, 0.02);
+    --main-degrade: linear-gradient(90deg, var(--sand) 0%, var(--blue-skyblue-alt) 40%, var(--blue-skyblue) 80%);
+    --ocean-radial-soft: radial-gradient(circle at 100%, var(--sand-soft) 0%, var(--blue-skyblue-soft) 33%, var(--dark-blue-soft) 76%);
+    --ocean-linear: linear-gradient(90deg, var(--sand) 0%, var(--blue-skyblue-alt) 40%, var(--blue-skyblue) 80%);
+    --ocean-linear-soft: linear-gradient(90deg, var(--sand-soft) 0%, var(--blue-skyblue-soft) 33%, var(--dark-blue-soft) 66%);
 }
 
 html {
     font-family: var(--main-font);
     background-color: var(--main-bg);
     color: var(--main-text);
-
 }
 
 

@@ -20,6 +20,31 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
+
+    /* Paths */
+    "paths": {
+      "@pages": [
+        "./src/components/pages", "./src/components/pages/*"
+      ],
+      "@templates": [
+        "./src/components/templates", "./src/components/templates/*"
+      ],
+      "@atoms": [
+        "./src/components/atoms", "./src/components/atoms/*"
+      ],
+      "@molecules": [
+        "./src/components/molecules", "./src/components/molecules/*"
+      ],
+      "@organisms": [
+        "./src/components/organisms", "./src/components/organisms/*"
+      ],
+      "@types": [
+        "./src/types", "./src/types/*"
+      ],
+      "@utils": [
+        "./src/utils", "./src/utils/*"
+      ]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
